@@ -16,11 +16,14 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
 
+    - name: Change directory
+      run: cd angular-demo
+
     - name: Build and deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.action_token }}
         BRANCH: gh-pages
-        FOLDER: angular_demo/dist
+        FOLDER: dist
         BUILD_SCRIPT: yarn install && yarn run build
         
