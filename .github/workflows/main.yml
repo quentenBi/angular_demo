@@ -3,7 +3,7 @@ name: Use github actions to build and deploy.
 on:
   push:
     branches:
-      - development
+      - master
 
 jobs:
   build_and_deploy:
