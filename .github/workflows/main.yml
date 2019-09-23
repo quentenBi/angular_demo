@@ -16,9 +16,6 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
 
-    - name: Change directory
-      run: cd angular-demo
-
     - name: Build and deploy
       uses: JamesIves/github-pages-deploy-action@master
       env:
